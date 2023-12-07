@@ -130,10 +130,10 @@ $(document).ready(function(){
       //update categories
       $('.category-edit').click(function(){
           let result = `<select class="form-select selectCategory" name="selectCategory" aria-label="Default select example">"
-                          "<option class='optionCategory' value="0">Làm sạch da</option>"
-                          "<option class='optionCategory' value="1">Dưỡng da</option>"
-                          "<option class='optionCategory' value="2">Mặt nạ</option>"
-                          "<option class='optionCategory' value="3">Trang điểm</option>"
+          "<option class='optionCategory' value="0">Mặt nạ</option>"
+          "<option class='optionCategory' value="1">Làm sạch da</option>"
+          "<option class='optionCategory' value="2">Dưỡng da</option>"
+          "<option class='optionCategory' value="3">Trang điểm</option>"
                       "</select>`;
       
         $('.container-select').html(result);
@@ -252,9 +252,9 @@ $(document).ready(function(){
     editForm('btn-insert--category','btn-insert--brand','btn-insert--produce',"Insert Categories", "Insert");
 
     let result = `<select class="form-select selectCategory" name="selectCategory" aria-label="Default select example">"
-                      "<option class='optionCategory' value="0">Làm sạch da</option>"
-                      "<option class='optionCategory' value="1">Dưỡng da</option>"
-                      "<option class='optionCategory' value="2">Mặt nạ</option>"
+                      "<option class='optionCategory' value="0">Mặt nạ</option>"
+                      "<option class='optionCategory' value="1">Làm sạch da</option>"
+                      "<option class='optionCategory' value="2">Dưỡng da</option>"
                       "<option class='optionCategory' value="3">Trang điểm</option>"
                   "</select>`;
     $('.container-select').html(result);

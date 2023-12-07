@@ -112,9 +112,9 @@ $(document).ready(function () {
       var makeUp = "";
 
       obj.forEach((item) => {
-        if (item.Loai == 1) {
+        if (item.Loai == 0) {
           mask += "<li><a href='SanPham&page=0&IDLoai=" + item.ID + "'>" + item.tenTL + "</a></li>";
-        } else if (item.Loai == 0) {
+        } else if (item.Loai == 1) {
           cleanSkin += "<li><a href='SanPham&page=0&IDLoai=" + item.ID + "'>" + item.tenTL + "</a></li>";
         } else if (item.Loai == 2) {
           skinCare += "<li><a href='SanPham&page=0&IDLoai=" + item.ID + "'>" + item.tenTL + "</a></li>";
@@ -123,7 +123,7 @@ $(document).ready(function () {
         }
       });
 
-      $(".Categories-Mask").html(mask);
+      $(".Categories-Mask").html(mask); 
       $(".Categories-CleanSkin").html(cleanSkin);
       $(".Categories-SkinCare").html(skinCare);
       $(".Categories-MakeUp").html(makeUp);
